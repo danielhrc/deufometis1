@@ -15,7 +15,7 @@
 /* =================================== */
 
 body {
-    background-color: #fff;
+    background-color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
     line-height: 24px;
     font-size: 16px;
@@ -63,9 +63,10 @@ main > section {
     position: relative;
     text-transform: uppercase;
 }
+/*#d56e13*/
 
 .btn-blue {
-    background-color: rgba(0,158,227, 0.78);
+    background-color: #d56e13 ;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 15px 55px;
     color: #fff;
@@ -148,7 +149,7 @@ main > section {
 }
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color: #009EE3;
+	color: #d56e13;
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -179,7 +180,7 @@ main > section {
 }
 
 .sec-title h2:after {
-    border-bottom: 1px solid #009ee3;
+    border-bottom: 1px solid #E6C114;
     content: "";
     display: block;
     left: 45%;
@@ -296,7 +297,7 @@ h1.navbar-brand {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #fff;
+    color: #D56E13;
     font-size: 15px;
     text-transform: uppercase;
 }
