@@ -89,9 +89,15 @@
 }
 
 #nav-arrows > a.sl-next:hover {
-	background-color: #009EE3;
-	border-color: #009EE3;
-	color: #fff;
+	background-color: #d56e13;
+	border-color: #d56e13;
+	color: #000000;
+}
+
+#nav-arrows > a.sl-prev:hover {
+	background-color: #d56e13;
+	border-color: #d56e13;
+	color: #000000;
 }
 
 /* Custom navigation dots */
