@@ -40,10 +40,24 @@
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
+        <!--Firebase INtegration-->
         <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-database.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-messaging.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyChdFiTzoywWqfte23BsTQDI-4uogvWrgM",
+    authDomain: "deu-fome-project-tis.firebaseapp.com",
+    databaseURL: "https://deu-fome-project-tis.firebaseio.com",
+    projectId: "deu-fome-project-tis",
+    storageBucket: "deu-fome-project-tis.appspot.com",
+    messagingSenderId: "6416502186"
+  };
+  firebase.initializeApp(config);
+</script>
 
     </head>
 	
@@ -116,8 +130,8 @@
 						<div class="slide-caption">
                             <div class="caption-content">
                                 <h2 class="animated fadeInDown">E ai, Deu Fome?</h2>
-                                <span class="animated fadeInDown">Clean and Professional one page Template</span>
-                                <a href="#" class="btn btn-blue btn-effect">Join US</a>
+                                <span class="animated fadeInDown">Então confira aqui estabelecimentos de qualidade e bom preço!</span>
+                               <a href="#portfolio" class="btn btn-blue btn-effect">Ver descontos</a>
                             </div>
                         </div>
 						
@@ -462,18 +476,6 @@
 		<!-- Custom Functions -->
         <script src="js/main.js"></script>
         
-<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyChdFiTzoywWqfte23BsTQDI-4uogvWrgM",
-    authDomain: "deu-fome-project-tis.firebaseapp.com",
-    databaseURL: "https://deu-fome-project-tis.firebaseio.com",
-    projectId: "deu-fome-project-tis",
-    storageBucket: "deu-fome-project-tis.appspot.com",
-    messagingSenderId: "6416502186"
-  };
-  firebase.initializeApp(config);
-</script>
+
     </body>
 </html>
