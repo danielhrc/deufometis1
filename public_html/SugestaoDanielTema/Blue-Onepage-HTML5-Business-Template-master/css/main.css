@@ -180,7 +180,7 @@ main > section {
 }
 
 .sec-title h2:after {
-    border-bottom: 1px solid #E6C114;
+    border-bottom: 1px solid #D56E13;
     content: "";
     display: block;
     left: 45%;
@@ -971,7 +971,7 @@ textarea.form-control {
 }
 
 #submit:before {
-  background-color: #0A85BB;
+  background-color: #272523;
 }
 
 #submit.btn-effect:after {
@@ -979,7 +979,7 @@ textarea.form-control {
 }
 
 .contact-details h3 {
-    border-bottom: 1px solid #008ecc;
+    border-bottom: 1px solid #D56E13;
     font-weight: 700;
     margin-bottom: 15px;
     padding-bottom: 15px;
