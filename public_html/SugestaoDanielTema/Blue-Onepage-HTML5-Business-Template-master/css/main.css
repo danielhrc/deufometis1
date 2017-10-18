@@ -79,7 +79,7 @@ main > section {
 }
 
 .bg-blue {
-    background-color: #009EE3;
+    background-color: rgba(213, 110, 19, 0.78);
 }
 
 /* Sweep To Right */
@@ -593,9 +593,9 @@ h1.navbar-brand {
 }
 
 .service-item:hover .service-icon {
-    border: 3px solid #009ee3;
+    border: 3px solid rgba(213, 110, 19, 0.78);
     margin-bottom: 20px;
-    color: #009ee3;
+    color: rgba(213, 110, 19, 0.78);
 }
 
 .service-icon i {
@@ -635,7 +635,7 @@ h1.navbar-brand {
 }
 
 figcaption.mask {
-    background-color: rgba(54, 55, 50, 0.79);
+    background-color: rgba(213, 110, 19, 0.78);
     bottom: -126px;
     color: #fff;
     padding: 25px;
@@ -692,7 +692,7 @@ ul.external li a {
 }
 
 ul.external li a:hover {
-    background-color: #009EE3;
+    background-color: rgba(213, 110, 19, 0.78);
     color: #fff;
 }
 
@@ -738,7 +738,7 @@ ul.external li a:hover {
 }
 
 #testimonials .overlay {
-    background-color: rgba(15,155,224, 0.78);
+    background-color: rgba(213, 110, 19, 0.78);
     padding: 70px 0 40px;
 }
 
