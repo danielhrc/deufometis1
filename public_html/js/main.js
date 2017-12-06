@@ -35,7 +35,8 @@ $(function() {
             initEvents = function() {
 
                 // add navigation events
-                $navArrows.children( ':last' ).on( 'click', function() {
+                
+				$navArrows.children( ':last' ).on( 'click', function() {
 
                     slitslider.next();
                     return false;
@@ -87,7 +88,7 @@ $(document).ready(function(){
 	/*	Menu item highlighting
 	/* ========================================================================= */
 
-	jQuery('#nav').singlePageNav({
+	/*jQuery('#nav').singlePageNav({
 		offset: jQuery('#nav').outerHeight(),
 		filter: ':not(.external)',
 		speed: 2000,
@@ -100,7 +101,7 @@ $(document).ready(function(){
 		onComplete: function() {
 			console.log('done scrolling');
 		}
-	});
+	});*/
 	
     $(window).scroll(function () {
         if ($(window).scrollTop() > 400) {
@@ -170,6 +171,52 @@ $(document).ready(function(){
 	});
 	
 });
+
+		var modal = document.getElementById('myModal');
+ 		var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		// When the user clicks the button, open the modal 
+		$(".portfolio-item2 .foodtruck-name").on('click', function(event){
+			$("#myCarousel").show();
+		});
+		
+        $(".login").on('click', function(event){
+            modal.style.display = "block";
+        });
+
+		$(".thumbnail").on('click', function(event){
+			random =possible.charAt(Math.floor(Math.random() * possible.length)) + possible.charAt(Math.floor(Math.random() * possible.length)) + possible.charAt(Math.floor(Math.random() * possible.length)) + Math.floor(Math.random() * 8999);
+			$('.cupom-desconto').text(' '+random+' ');
+			modal.style.display = "block";
+		});
+
+		$(".deufome").on('click', function(event){
+			random =possible.charAt(Math.floor(Math.random() * possible.length)) + possible.charAt(Math.floor(Math.random() * possible.length)) + possible.charAt(Math.floor(Math.random() * possible.length)) + Math.floor(Math.random() * 8999);
+			$('.cupom-desconto').text(' '+random+' ');
+			modal.style.display = "block";
+		});
+
+		// When the user clicks on <span> (x), close the modal
+		$("#myModal .close").on('click', function(event){
+			modal.style.display = "none";
+		});
+		// When the user clicks on <span> (x), close the modal
+		$("#myModal .button").on('click', function(event){
+			modal.style.display = "none";
+		});
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+
+		}
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 6000
+    })
+  });
+
 
 
 /* ==========  START GOOGLE MAP ========== */
@@ -266,4 +313,63 @@ var wow = new WOW ({
 	mobile:       false,       // trigger animations on mobile devices (default is true)
 });
 wow.init();
+$(document).ready(function() {              
+    $('i.fa-thumbs-up, i.fa-thumbs-down').click(function(){    
+        var $this = $(this),
+        c = $this.data('count');    
+        if (!c) c = 0;
+        c++;
+        $this.data('count',c);
+        $('#'+this.id+'-bs3').html(c);
+    });      
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });                                        
+}); 
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+/*$(".star").change(function() {
+    var testarray = (this)document.getElementsByClassName("filterDiv");
+    if($(this).is(':checked')) 
+        for(var i = 0; i < testarray.length; i++)
+   testarray.item(i).className += " favoritos"; 
+    else 
+        testarray = document.removeClass("favoritos");
+});*/

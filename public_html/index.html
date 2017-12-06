@@ -10,8 +10,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Deu Fome?</title>		
 		<!-- Meta Description -->
-        <meta name="description" content="Blue One Page Creative HTML5 Template">
-        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+        <meta name="description" content="Deu fome, app de descontos para você que tem fome de descontos">
+        <meta name="keywords" content="deu fome, app descontos, fome de descontos, tis, puc minas">
         <meta name="author" content="Deu Fome LTDA">
 		
 		<!-- Mobile Specific Meta -->
@@ -21,7 +21,8 @@
 		================================================== -->
 		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-		
+		<!--Stars icon-->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 		<!-- Fontawesome Icon font -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		<!-- bootstrap.min -->
@@ -59,62 +60,63 @@
 		  firebase.initializeApp(config);
 		</script>
 
+<style>
+.button {
+    background-color: #D56E13;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
+
 		<!-- AQUI -->
-		<style>
-		/* The Modal (background) */
-		.modal {
-			display: none; /* Hidden by default */
-			position: fixed; /* Stay in place */
-			z-index: 1; /* Sit on top */
-			padding-top: 100px; /* Location of the box */
-			left: 0;
-			top: 0;
-			width: 100%; /* Full width */
-			height: 100%; /* Full height */
-			overflow: auto; /* Enable scroll if needed */
-			background-color: rgb(0,0,0); /* Fallback color */
-			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-		}
+    <style type="text/css">
+	
+.thumbnails li> .fff .caption { 
+    background:#fff !important; 
+    padding:10px
+}
 
-		/* Modal Content */
-		.modal-content {
-			background-color: #fefefe;
-			margin: auto;
-			padding: 20px;
-			border: 1px solid #888;
-			width: 80%;
-		}
+/* Page Header */
+.page-header {
+    background: #f9f9f9;
+    margin: -30px -40px 40px;
+    padding: 20px 40px;
+    border-top: 4px solid #ccc;
+    color: #999;
+    text-transform: uppercase;
+}
+    
+.page-header h3 {
+    line-height: 0.88rem;
+    color: #000;
+}
 
-		/* The Close Button */
-		.close {
-			color: #aaaaaa;
-			float: right;
-			font-size: 28px;
-			font-weight: bold;
-		}
+ul.thumbnails { 
+    margin-bottom: 0px;
+}
 
-		.close:hover,
-		.close:focus {
-			color: #000;
-			text-decoration: none;
-			cursor: pointer;
-		}
-		</style>
-		<!-- AQUI -->
+/* Thumbnail Box */
+.caption h4 {
+    color: #444;
+}
 
+.caption p {  
+    color: #999;
+}
+    </style>
     </head>
+
 	
     <body id="body">
 	
-		<!-- AQUI -->
-		<div id="myModal" class="modal">
-		  <div class="modal-content">
-			<span class="close">&times;</span>
-			<p><p>Desconto de 20% resgatado com sucesso.</br> O número do seu cupom de desconto é <span class="cupom-desconto"></span></p>
-		  </div>
-		</div>
-		<!-- AQUI -->
-
 		<!-- preloader -->
 		<div id="preloader">
             <div class="loder-box">
@@ -140,7 +142,7 @@
 					
 					<!-- logo -->
 					<h1 class="navbar-brand">
-						<a href="#body">E ai, deu fome?</a>
+						<a href="index.html">E ai, deu fome?</a>
 					</h1>
 					<!-- /logo -->
                 </div>
@@ -151,10 +153,11 @@
                         <!--<li><a href="#body">Home</a></li><-->
                         <li><a href="#service">|Para o consumidor</a></li>
                         <li><a href="#portfolio">|Descontos</a></li>
-                        <li><a href="#service2">|Para o estabelecimento</a></li>
-                        <li><a href="#testimonials">|Equipe</a></li>
-                        <li><a href="#contact">|Contato</a></li>
-                        <li><a href="http://deu-fome.000webhost.com">|Login/Cadastre-se</a></li>
+                        <li><a href="estabelecimento.html">|Para o estabelecimento</a></li>
+                        <li><a href="equipe.html">|Equipe</a></li>
+                        <li><a href="contato.html">|Contato</a></li>
+                        <li><a href="login.html">|Login</a></li>
+                        <li><a href="registro.html">|Registro</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->
@@ -182,35 +185,21 @@
 
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2 class="animated fadeInDown"><a href="#">E ai, Deu Fome?</a></h2>
-                                <span class="animated fadeInDown">O aplicativo pra quem tem fome de descontos.</span>
+                                <h2 class="animated fadeInDown"><a href="#"><img src="Imagens\1.png" alt=""></a></h2>
+                                <span class="animated fadeInDown">O aplicativo pra quem tem fome de descontos</span>
                                <a href="#portfolio" class="btn btn-blue btn-effect">Ver descontos</a>
                             </div>
                         </div>
 						
-					</div>
-					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-					
-						<div class="bg-img bg-img-2"></div>
-						<div class="slide-caption">
-                            <div class="caption-content">
-                                <h2>Seja um de nossos parceiros</h2>
-                                <span>E tenha sua marca divulgada.</span>
-                                <a href="#contact" class="btn btn-blue btn-effect">Saiba mais</a>
-                            </div>
-                        </div>
-						
-					</div>
-					
+					</div>					
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
 						
 						<div class="bg-img bg-img-3"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
                                 <h2>Sugestões</h2>
-                                <span>Ajude-nos a crescer.</span>
-                                <a href="#contact" class="btn btn-blue btn-effect">Recomendações</a>
+                                <span>Ajude-nos a crescer</span>
+                                <a href="contato.html" class="btn btn-blue btn-effect">Recomendações</a>
                             </div>
                         </div>
 
@@ -244,9 +233,157 @@
 			</div><!-- /slider-wrapper -->
 		</section>
 			
+		
+		<!-- portfolio section -->
+		<section id="portfolio">
+			
+			<div class="container" >
+				<div class="row">
+					<div class="sec-title text-center wow animated fadeInDown">
+						<h2>Descontos</h2>
+							<p>E aí, Deu Fome? Então selecione onde você quer ganhar descontos!</p>
+					</div><br>
+					<div class="icon-bar">
+					<input type="radio" onclick="filterSelection('all')" name="category" id="radio-all">
+					<label for="radio-all"><img src="Imagens\icons\f0.png" alt=""></label>
+					<input type="radio" onclick="filterSelection('burger')" name="category" id="radio-burger">
+					<label for="radio-burger"><img src="Imagens\icons\f1.png" alt=""></label>
+					<input type="radio" onclick="filterSelection('pasta')" name="category" id="radio-pasta">
+					<label for="radio-pasta"><img src="Imagens\icons\f2.png" alt=""></label>
+					<input type="radio" onclick="filterSelection('hotdog')" name="category" id="radio-hotdog">
+					<label for="radio-hotdog"><img src="Imagens\icons\f3.png" alt=""></label>
+					<input type="radio" onclick="filterSelection('sushi')" name="category" id="radio-sushi">
+					<label for="radio-sushi"><img src="Imagens\icons\f5.png" alt=""></label>
+					<input type="radio" onclick="filterSelection('pizza')" name="category" id="radio-pizza">
+					<label for="radio-pizza"><img src="Imagens\icons\f4.png" alt=""></label>
+					<input type="radio" onclick="filterSelection('icecream')" name="category" id="radio-icecream">
+					<label for="radio-icecream"><img src="Imagens\icons\f6.png" alt=""></label>
+					<input type="radio" onclick="filterSelection('favoritos')" name="category" id="radio-favoritos">
+					<label for="radio-favoritos"><img src="Imagens\icons\fav.png" alt=""></label>
+				</div>
+					<ul class="project-wrapper wow animated fadeInUp">
+						<li class="portfolio-item filterDiv burger">
+							<img src="Imagens/FoodTruck1.jpg" class="img-responsive" alt="Tradição e qualidade.">
+							<figcaption class="mask">
+								<div class="foodtruck-name">
+								<h3><a href="nebraskaburger.html">Nebraska Burger<img src="Imagens\icons\f1.png" alt=""></a></h3>
+								<p>Rua Cláudio Manoel, em frente ao número 1.185 - Funcionários </p>
+								<div class="stars2"><form action="">
+   							 	<input class="star star-1" id="star1" type="checkbox" name="star"/>
+  							  	<label class="star star-1" for="star1"></label>
+ 							 	</form></div>
+								</div>
+
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Nebraska Burger" data-fancybox-group="works" href="Imagens/FoodTruck1.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+						
+						<li class="portfolio-item filterDiv pasta">
+							<img src="Imagens/FoodTruck2.jpg" class="img-responsive" alt="Eu vou fazer uma proposta que você não poderá recusar">
+							<figcaption class="mask">
+								<div class="foodtruck-name">
+								<h3><a href="lafamiglia.html">La Famiglia<img src="Imagens\icons\f2.png" alt=""></a></h3>
+								<p>Rua Sergipe, em frente ao número 790 - Funcionários </p>
+								<div class="stars2"><form action="">
+   							 	<input class="star star-1" id="star2" type="checkbox" name="star"/>
+  							  	<label class="star star-1" for="star2"></label>
+ 							 	</form>
+								</div></div>
+
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="La Famiglia" data-fancybox-group="works" href="Imagens/FoodTruck2.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+						
+						<li class="portfolio-item filterDiv hotdog">
+							<img src="Imagens/FoodTruck3.jpg" class="img-responsive" alt="A festa é da salsicha">
+							<figcaption class="mask">
+								<div class="foodtruck-name">
+								<h3><a href="discodogs.html">Disco Dogs<img src="Imagens\icons\f3.png" alt=""></a></h3>
+								<p>Rua Santa Rita Durão, em frente ao número 1.160 - Funcionários </p>
+								<div class="stars2"><form action="">
+   							 	<input class="star star-1" id="star3" type="checkbox" name="star"/>
+  							  	<label class="star star-1" for="star3"></label>
+ 							 	</form>
+								</div></div>
+
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Disco Dogs" data-fancybox-group="works" href="Imagens/FoodTruck3.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+						
+						<li class="portfolio-item filterDiv pizza">
+							<img src="Imagens/FoodTruck5.jpg" class="img-responsive" alt="Sushi é como o vento, está sempre ao meu lado">
+							<figcaption class="mask">
+								<div class="foodtruck-name">
+								<h3><a href="hasagi.html">Hasagi<img src="Imagens\icons\f4.png" alt=""></a></h3>
+								<p>Praça Duque de Caxias, em frente ao número 220 - Santa Teresa </p>
+								<div class="stars3"><form action="">
+   							 	<input class="star star-1" id="star4" type="checkbox" name="star"/>
+  							  	<label class="star star-1" for="star4"></label>
+ 							 	</form>
+								</div></div>
+
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Hasagi" data-fancybox-group="works" href="Imagens/FoodTruck5.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+						
+						<li class="portfolio-item filterDiv sushi">
+							<img src="Imagens/FoodTruck4.jpg" class="img-responsive" alt="Era essa Pizza que você queria ?">
+							<figcaption class="mask">
+								<div class="foodtruck-name">
+								<h3><a href="bigalora.html">Bigalora<img src="Imagens\icons\f5.png" alt=""></a></h3>
+								<p>Rua Contagem, em frente ao número 2103 - Santa Inês </p>
+								<div class="stars4"><form action="">
+   							 	<input class="star star-1" id="star5" type="checkbox" name="star"/>
+  							  	<label class="star star-1" for="star5"></label>
+ 							 	</form>
+								</div></div>
+
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Bigalora" data-fancybox-group="works" href="Imagens/FoodTruck4.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+						
+						<li class="portfolio-item filterDiv icecream">
+								<img src="Imagens/FoodTruck6.jpg" class="img-responsive" alt="Fica frio ai">
+							<figcaption class="mask">
+								<div class="foodtruck-name">
+								<h3><a href="rockypoint.html">Rocky Point<img src="Imagens\icons\f6.png" alt=""></a></h3>
+								<p>Rua Conceição Do Pará, em frente ao número 1726 - Santa Inês </p>
+								<div class="stars5"><form action="">
+   							 	<input class="star star-1" id="star6" type="checkbox" name="star"/>
+  							  	<label class="star star-1" for="star6"></label>
+ 							 	</form>
+								</div></div>
+
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Rocky Point" data-fancybox-group="works" href="Imagens/FoodTruck6.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- end portfolio section -->
+
 			
 		<!-- Service section -->
-		<section id="service">
+		<section id="service" >
 			<div class="container">
 				<div class="row">
 				
@@ -261,7 +398,7 @@
 								<i class="fa fa-home fa-3x"></i>
 							</div>
 							<h3>Conforto</h3>
-							<p>Resgate seu desconto em casa.</p>
+							<p>Resgate seu desconto em casa</p>
 						</div>
 					</div>
 				
@@ -271,7 +408,7 @@
 								<i class="fa fa-thumbs-up fa-3x"></i>
 							</div>
 							<h3>Qualidade</h3>
-							<p>A avaliação é feita por você.</p>
+							<p>A avaliação é feita por você</p>
 						</div>
 					</div>
 				
@@ -281,7 +418,7 @@
 								<i class="fa fa-line-chart fa-3x"></i>
 							</div>
 							<h3>Progressividade</h3>
-							<p>Descontos progressivos.</p>
+							<p>Descontos progressivos</p>
 						</div>
 					</div>
 				
@@ -292,7 +429,7 @@
 							</div>
 							
 							<h3>Cashback</h3>
-							<p>Parte do seu dinheiro de volta.</p>							
+							<p>Parte do seu dinheiro de volta</p>							
 						</div>
 					</div>
 					
@@ -300,263 +437,9 @@
 			</div>
 		</section>
 		<!-- end Service section -->
-		
-		<!-- portfolio section -->
-		<section id="portfolio">
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center wow animated fadeInDown">
-						<h2>Descontos</h2>
-						<p>E aí, Deu Fome? Então selecione onde você quer ganhar descontos!</p>
-					</div>
-					
 
-					<ul class="project-wrapper wow animated fadeInUp">
-						<li class="portfolio-item">
-							<img src="Imagens\FoodTruck1.jpg" class="img-responsive" alt="Tradição e qualidade.">
-							<figcaption class="mask">
-								<h3>Dona Clara</h3>
-								<p>Endereço: Rua Cláudio Manoel, em frente ao número 1.185 - Funcionários </p>
-							</figcaption>
-							<ul class="external">
-								<li><a class="fancybox" title="Dona Clara" data-fancybox-group="works" href="Imagens\FoodTruck1.jpg"><i class="fa fa-search"></i></a></li>
-								<li><a href=""><i class="fa fa-link"></i></a></li>
-							</ul>
-						</li>
-						
-						<li class="portfolio-item">
-							<img src="Imagens/FoodTruck2.jpg" class="img-responsive" alt="Comida rápida e barata.">
-							<figcaption class="mask">
-								<h3>Imperador</h3>
-								<p>Endereço: Rua Sergipe, em frente ao número 790 - Funcionários </p>
-							</figcaption>
-							<ul class="external">
-								<li><a class="fancybox" title="Imperador" href="Imagens\FoodTruck2.jpg" data-fancybox-group="works" ><i class="fa fa-search"></i></a></li>
-								<li><a href=""><i class="fa fa-link"></i></a></li>
-							</ul>
-						</li>
-						
-						<li class="portfolio-item">
-							<img src="Imagens/FoodTruck3.jpg" class="img-responsive" alt="O melhor sabor.">
-							<figcaption class="mask">
-								<h3>FastSabor</h3>
-								<p>Rua Santa Rita Durão, em frente ao número 1.160 - Funcionários </p>
-							</figcaption>
-							<ul class="external">
-								<li><a class="fancybox" title="FastSabor" data-fancybox-group="works" href="Imagens/FoodTruck2.jpg"><i class="fa fa-search"></i></a></li>
-								<li><a href=""><i class="fa fa-link"></i></a></li>
-							</ul>
-						</li>
-						
-						<li class="portfolio-item">
-							<img src="Imagens/FoodTruck4.jpg" class="img-responsive" alt="O melhor lugar para saborear.">
-							<figcaption class="mask">
-								<h3>PraçaTruck</h3>
-								<p>Endereço: Praça Duque de Caxias, em frente ao número 220 - Santa Teresa </p>
-							</figcaption>
-							<ul class="external">
-								<li><a class="fancybox" title="PraçaTruck" data-fancybox-group="works" href="Imagens/FoodTruck4.jpg"><i class="fa fa-search"></i></a></li>
-								<li><a href=""><i class="fa fa-link"></i></a></li>
-							</ul>
-						</li>
-						
-						<li class="portfolio-item">
-							<img src="Imagens/FoodTruck5.jpg" class="img-responsive" alt="Sua mehor escolha.">
-							<figcaption class="mask">
-								<h3>BestChoice</h3>
-								<p>Endereço: Rua Contagem, em frente ao número 2103 - Santa Inês </p>
-							</figcaption>
-							<ul class="external">
-								<li><a class="fancybox" title="BestCHoice" data-fancybox-group="works" href="Imagens/FoodTruck5.jpg"><i class="fa fa-search"></i></a></li>
-								<li><a href=""><i class="fa fa-link"></i></a></li>
-							</ul>
-						</li>
-						
-						<li class="portfolio-item">
-							<img src="Imagens/FoodTruck6.jpg" class="img-responsive" alt="Incomparável.">
-							<figcaption class="mask">
-								<h3>Magnus</h3>
-								<p>Endereço: Rua Conceição Do Pará, em frente ao número 1726 - Santa Inês </p>
-							</figcaption>
-							<ul class="external">
-								<li><a class="fancybox" title="Magnus" data-fancybox-group="works" href="Imagens/FoodTruck6.jpg"><i class="fa fa-search"></i></a></li>
-								<li><a href=""><i class="fa fa-link"></i></a></li>
-							</ul>
-						</li>
-					</ul>
-					
-				</div>
-			</div>
-		</section>
-		<!-- end portfolio section -->
-<!-- Service for ESTABELECIMENTOS section -->
-		<section id="service2">
-			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center">
-						<h2 class="wow animated bounceInLeft">Para o seu estabelecimento</h2>
-						<p class="wow animated bounceInRight">Benefícios de nossas parcerias.</p>
-					</div>
-					
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-star fa-3x"></i>
-							</div>
-							<h3>Popularidade</h3>
-							<p>Divulgação do seu estabelecimento. </p>
-						</div>
-					</div>
-				
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-bookmark fa-3x"></i>
-							</div>
-							<h3>Fidelidade</h3>
-							<p>Clientes comprando com mais frequência. </p>
-						</div>
-					</div>
-				
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-wifi fa-3x"></i>
-							</div>
-							<h3>Modernização</h3>
-							<p>Acompanhe o avanço da tecnologia.</p>
-						</div>
-					</div>
-				
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-cogs fa-3x"></i>
-							</div>
-							
-							<h3>Manutenção</h3>
-							<p>Suporte disponível 24 horas por dia. </p>							
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</section>
-		<!-- end Service section -->
-		
-		
 
-		<!-- Testimonial section -->
-		<section id="testimonials" class="parallax">
-			<div class="overlay">
-				<div class="container">
-					<div class="row">
-					
-						<div class="sec-title text-center white wow animated fadeInDown">
-							<h2>Equipe</h2>
-							<p>A Equipe da DEU FOME é composta por profissionais qualificados, continuamente treinados e avaliados para proporcionarem serviços de descontos efetivamente diferenciado, nas mais diversas áreas da Engenharia de Software.
-
-Comprometimento e competência são essenciais para uma carreira promissora no grupo, que muito preza pelo aprimoramento contínuo e pela retenção de seus talentos.</p>
-						</div>
-						
-						<div id="testimonial" class=" wow animated fadeInUp">
-							<div class="testimonial-item text-center">
-								<img src="img/member-1.jpg" alt="Our Clients">
-								<div class="clearfix">
-									<span>Anderson Barbosa Coutinho</span>
-									<p>Acadêmico no curso de Engenharia de Software pela PUC MINAS, com atuação na área de Front-End Developer do DEU FOME.</p>
-								</div>
-							</div>
-							<div class="testimonial-item text-center">
-								<img src="img/member-3.jpg" alt="Our Clients">
-								<div class="clearfix">
-									<span>Daniel Henrique Rodrigues Costa</span>
-									<p>Acadêmico no curso de Engenharia de Software pela PUC MINAS, com atuação na área de Front & Back-End Developer do DEU FOME.</p>
-								</div>
-							</div>
-							<div class="testimonial-item text-center">
-								<img src="img/member-5.jpg" alt="Our Clients">
-								<div class="clearfix">
-									<span>Erick Alvares da Silva</span>
-									<p>Acadêmico no curso de Engenharia de Software pela PUC MINAS, com atuação na área de Partnership Developer do DEU FOME.</p>
-								</div>
-							</div>
-							<div class="testimonial-item text-center">
-								<img src="img/member-2.jpg" alt="Our Clients">
-								<div class="clearfix">
-									<span>Izabela de Oliveira Cunha</span>
-									<p>Acadêmica no curso de Engenharia de Software pela PUC MINAS, com atuação na área de Front-End Developer do DEU FOME.</p>
-								</div>
-							</div>
-							
-							<div class="testimonial-item text-center">
-								<img src="img/member-4.jpg" alt="Our Clients">
-								<div class="clearfix">
-									<span>Rodrigo Ribeiro de Araujo</span>
-									<p>Acadêmico no curso de Engenharia de Software pela PUC MINAS, com atuação na área de Partnership Developer do DEU FOME.</p>
-								</div>
-							</div>
-							
-							<div class="testimonial-item text-center">
-								<img src="img/member-6.jpg" alt="Our Clients">
-								<div class="clearfix">
-									<span>Tiago Botelho Arabi Goncalves</span>
-									<p>Acadêmico no curso de Engenharia de Software pela PUC MINAS, com atuação na área de Back-End Developer do DEU FOME.</p>
-								</div>
-							</div>
-						</div>
-					
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end Testimonial section -->
-
-		
-		
-		
-		
-		<!-- Contact section -->
-		<section id="contact" >
-			<div class="container">
-				<div class="row">
-					
-					<div class="sec-title text-center wow animated fadeInDown">
-						<h2>Entre em contato conosco!</h2>
-						<p>Deixe-nos uma mensagem!</p>
-					</div>
-					
-					
-					<div class="col-md-7 contact-form wow animated fadeInLeft">
-						<form action="mailto:contato@deufome.ml" method="post">
-							<div class="input-field">
-								<input type="text" name="name" class="form-control" placeholder="Nome">
-							</div>
-							<div class="input-field">
-								<input type="email" name="email" class="form-control" placeholder="Email">
-							</div>
-							<div class="input-field">
-								<input type="text" name="subject" class="form-control" placeholder="Assunto">
-							</div>
-							<div class="input-field">
-								<textarea name="message" class="form-control" placeholder="Digite aqui sua mensagem..."></textarea>
-							</div>
-					       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Enviar</button>
-						</form>
-					</div>
-					
-		
-				</div>
-			</div>
-		</section>
-		<!-- end Contact section -->
-		
-		<section id="google-map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240074.49459676485!2d-44.10039977338473!3d-19.91749363206379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690a165324289%3A0x701d1dc8bb05fd7d!2sBelo+Horizonte+-+MG!5e0!3m2!1spt-BR!2sbr!4v1507733259413" height="500" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</section>
-		
+	
 		</main>
 		
 		<footer id="footer">
@@ -566,7 +449,8 @@ Comprometimento e competência são essenciais para uma carreira promissora no g
 						<div class="wow animated fadeInDown">
 							
 						
-						<p>Copyright &copy; Desenvolvido por Deu Fome | Baseado em um tema de <a href="http://www.themefisher.com">Themefisher</a> </p>
+						<p>Copyright &copy; Desenvolvido por <a href="http://www.themefisher.com">Deu Fome</a> </p>
+						<a href="easteregg.html" style="color:#2E2E2E">?</a>
 					</div>
 				</div>
 			</div>
@@ -601,10 +485,14 @@ Comprometimento e competência são essenciais para uma carreira promissora no g
 		<script>
 		// Get the modal
 		var modal = document.getElementById('myModal');
-
+ 		var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		// When the user clicks the button, open the modal 
-		$(".portfolio-item .img-responsive").on('click', function(event){
-			random = Math.floor(Math.random() * 899999) + 100000
+		$(".portfolio-item .foodtruck-name").on('click', function(event){
+			$("#myCarousel").show();
+		});
+		
+		$(".thumbnail").on('click', function(event){
+			random =possible.charAt(Math.floor(Math.random() * possible.length)) + possible.charAt(Math.floor(Math.random() * possible.length)) + possible.charAt(Math.floor(Math.random() * possible.length)) + Math.floor(Math.random() * 8999);
 			$('.cupom-desconto').text(' '+random+' ');
 			modal.style.display = "block";
 		});
@@ -622,6 +510,53 @@ Comprometimento e competência são essenciais para uma carreira promissora no g
 		}
 		</script>
 		<!-- AQUI -->
+		<script type="text/javascript">
+		// Carousel Auto-Cycle
+		  $(document).ready(function() {
+			$('.carousel').carousel({
+			  interval: 6000
+			})
+		  });
+		</script>
+		<!-- AQUI -->
+		<script type="text/javascript">
+			filterSelection("all")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("filterDiv");
+			  if (c == "all") c = "";
+			  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+			  for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
 
+			// Show filtered elements
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {
+				  element.className += " " + arr2[i];
+				}
+			  }
+			}
+
+			// Hide elements that are not selected
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+				  arr1.splice(arr1.indexOf(arr2[i]), 1); 
+				}
+			  }
+			  element.className = arr1.join(" ");
+			}
+		</script>
+		<!-- AQUI -->
     </body>
 </html>

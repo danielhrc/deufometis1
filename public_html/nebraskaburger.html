@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta character set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Deu Fome?</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="Blue One Page Creative HTML5 Template">
+        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+        <meta name="author" content="Deu Fome LTDA">
+		
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		<!--Stars icon-->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!--Firebase INtegration-->
+        <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-messaging.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+<script src="//rawgithub.com/ashleydw/lightbox/master/dist/ekko-lightbox.js"></script>
+
+
+		<script>
+		  // Initialize Firebase
+		  var config = {
+			apiKey: "AIzaSyChdFiTzoywWqfte23BsTQDI-4uogvWrgM",
+			authDomain: "deu-fome-project-tis.firebaseapp.com",
+			databaseURL: "https://deu-fome-project-tis.firebaseio.com",
+			projectId: "deu-fome-project-tis",
+			storageBucket: "deu-fome-project-tis.appspot.com",
+			messagingSenderId: "6416502186"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+
+<style>
+.button {
+    background-color: #D56E13;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
+
+		<!-- AQUI -->
+    <style type="text/css">
+	
+.thumbnails li> .fff .caption { 
+    background:#fff !important; 
+    padding:10px
+}
+
+/* Page Header */
+.page-header {
+    background: #f9f9f9;
+    margin: -30px -40px 40px;
+    padding: 20px 40px;
+    border-top: 4px solid #ccc;
+    color: #999;
+    text-transform: uppercase;
+}
+    
+.page-header h3 {
+    line-height: 0.88rem;
+    color: #000;
+}
+
+ul.thumbnails { 
+    margin-bottom: 0px;
+}
+
+/* Thumbnail Box */
+.caption h4 {
+    color: #444;
+}
+
+.caption p {  
+    color: #999;
+}
+    </style>
+    </head>
+
+	
+    <body id="body">
+	
+		<!-- AQUI -->
+		<div id="myModal" class="modal">
+		  <div class="modal-content">
+			<span class="close">&times;</span>
+			<p><center><p>Desconto de <negrito>20%</negrito> resgatado com sucesso.</br> O número do seu cupom de desconto é <discount> <span class="cupom-desconto"></discount><br> <a data-dismiss="modal" class="button">BON APPÉTIT</a></center>
+			</span></p>
+		  </div>
+		</div>
+		<!-- AQUI -->
+
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					<h1 class="navbar-brand">
+						<a href="index.html">E ai, deu fome?</a>
+					</h1>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <!--<li><a href="#body">Home</a></li><-->
+                        <li><a href="index.html#service">|Para o consumidor</a></li>
+                        <li><a href="index.html#portfolio">|Descontos</a></li>
+                        <li><a href="estabelecimento.html">|Para o estabelecimento</a></li>
+                        <li><a href="equipe.html">|Equipe</a></li>
+                        <li><a href="contato.html">|Contato</a></li>
+                        <li><a href="login.html">|Login</a></li>
+                        <li><a href="registro.html">|Registro</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+<main class="site-content" role="main">
+		
+		<section id="portfolio">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="sec-title text-center wow animated fadeInDown">
+						<h2>Nebraska Burger</h2>
+						<p>Tradição e qualidade</p>
+					</div>
+					<ul class="project-wrapper wow animated fadeInUp">
+						<li class="portfolio-item2">
+							<img src="Imagens\FoodTruck1.jpg" class="img-responsive" alt="Tradição e qualidade">							
+									<figcaption class="mask2">
+								<div class="foodtruck-name">
+									<h3><a href="#">Nebraska Burger<img src="Imagens\icons\f1.png" alt=""></a></h3>
+									<p>Rua Cláudio Manoel, em frente ao número 1.185 - Funcionários</p>
+									<div class="discount-badge"><span class="amount">20%</span><span class="icon fa fa-info-circle"></span></div>
+								</div>
+                        <a><i id="like1" class="fa fa-thumbs-up fa-2x"></i> <div class="like" id="like1-bs3"></div></a>
+                        <a><i id="dislike1" class="fa fa-thumbs-down fa-2x"></i> <div class="dislike" id="dislike1-bs3"/></div></a>
+                   
+								<div class="stars">
+									<form action="">
+										<input class="star star-1" id="star1-1" type="checkbox" name="star"/>
+										<label class="star star-1" for="star1-1"></label>
+									</form>
+								</div>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Nebraska Burger" data-fancybox-group="works" href="Imagens\FoodTruck1.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+						<!-- Carousel -->
+											
+						<div class="carousel slide" id="myCarousel">
+							<div class="carousel-inner">
+								<div class="item active">
+										<ul class="thumbnails">
+											<li class="col-sm-3">
+												<div class="fff">
+													<div class="thumbnail">
+														<a ><img src="Imagens\burger1.jpg" alt=""></a>
+													<div class="caption">
+														<h4>Misto</h4>
+														<p>Pão de Forma, Queijo e Presunto.</p>
+														<span class="cut">R$8,00</span> 
+														<span class="pricetag">R$6,40</span>
+														<a class="btn btn-mini"><div class="deufome">DEU FOME</div></a>
+													</div></div>
+												</div>
+											</li>
+											<li class="col-sm-3">
+												<div class="fff">
+													<div class="thumbnail">
+														<a><img src="Imagens\burger2.jpg" alt=""></a>
+													
+													<div class="caption">
+														<h4>Simples</h4>
+														<p>Pão, Hamburger, Cheddar, Tomate e Alface.</p>
+														<span class="cut">R$10,00</span> 
+														<span class="pricetag">R$8,00</span>
+														<a class="btn btn-mini"><div class="deufome">DEU FOME</div></a>
+													</div></div>
+												</div>
+											</li>
+											<li class="col-sm-3">
+												<div class="fff">
+													<div class="thumbnail">
+														<a><img src="Imagens\burger3.jpg" alt=""></a>
+													<div class="caption">
+														<h4>Suspiro</h4>
+														<p>Pão, Hamburger, Cheddar e Bacon.</p>
+														<span class="cut">R$10,00</span> 
+														<span class="pricetag">R$8,00</span>
+														<a class="btn btn-mini"><div class="deufome">DEU FOME</div></a>
+													</div></div>
+												</div>
+											</li>
+											<li class="col-sm-3">
+												<div class="fff">
+													<div class="thumbnail">
+														<a><img src="Imagens\burger4.jpg" alt=""></a>
+													<div class="caption">
+														<h4>Buffalo Bill</h4>
+														<p>Pão, (2x) Hamburger, Alface, Tomate, Bacon e Cheddar. </p>
+														<span class="cut">R$15,00</span> 
+														<span class="pricetag">R$12,00</span>
+														<a class="btn btn-mini"><div class="deufome">DEU FOME</div></a>
+													</div></div>
+												</div>
+											</li>
+										</ul>
+								  </div><!-- /Slide2 --> 
+							</div>
+							
+						   <!-- /.control-box -->   
+												  
+						</div><!-- /#myCarousel -->
+											
+						<!-- Carousel -->	
+		</main>
+		
+		<footer id="footer">
+			<div class="container">
+				<div class="row text-center">
+					<div class="footer-content">
+						<div class="wow animated fadeInDown">
+							
+						
+						<p>Copyright &copy; Desenvolvido por Deu Fome | Baseado em um tema de <a href="http://www.themefisher.com">Themefisher</a> </p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Google Map API -->
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js"></script>
+    </body>
+    <script>function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)}(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+</html>

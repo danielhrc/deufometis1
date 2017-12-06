@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta character set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Deu Fome?</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="Blue One Page Creative HTML5 Template">
+        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+        <meta name="author" content="Deu Fome LTDA">
+		
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <!--Firebase INtegration-->
+        <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-messaging.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+		
+		<script>
+		  // Initialize Firebase
+		  var config = {
+			apiKey: "AIzaSyChdFiTzoywWqfte23BsTQDI-4uogvWrgM",
+			authDomain: "deu-fome-project-tis.firebaseapp.com",
+			databaseURL: "https://deu-fome-project-tis.firebaseio.com",
+			projectId: "deu-fome-project-tis",
+			storageBucket: "deu-fome-project-tis.appspot.com",
+			messagingSenderId: "6416502186"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+
+		<!-- AQUI -->
+		<style>
+		/* The Modal (background) */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			padding-top: 100px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		/* Modal Content */
+		.modal-content {
+			background-color: #fefefe;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%;
+		}
+
+		/* The Close Button */
+		.close {
+			color: #aaaaaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		</style>
+		<!-- AQUI -->
+
+    </head>
+	
+    <body id="body">
+	
+		<!-- AQUI -->
+		<div id="myModal" class="modal">
+		  <div class="modal-content">
+			<span class="close">&times;</span>
+			<p>Desconto resgatado com sucesso.<span class="cupom-desconto"></span></p>
+		  </div>
+		</div>
+		<!-- AQUI -->
+
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					<h1 class="navbar-brand">
+						<a href="index.html">E ai, deu fome?</a>
+					</h1>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <!--<li><a href="#body">Home</a></li><-->
+                        <li><a href="#service">|Para o consumidor</a></li>
+                        <li><a href="index.html#portfolio">|Descontos</a></li>
+                        <li><a href="estabelecimento.html">|Para o estabelecimento</a></li>
+                        <li><a href="equipe.html">|Equipe</a></li>
+                        <li><a href="contato.html">|Contato</a></li>
+                        <li><a href="login.html">|Login</a></li>
+                        <li><a href="registro.html">|Registro</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<main class="site-content" role="main">
+		
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		
+		<!-- Contact section -->
+		<section id="contact" >
+			<div class="container">
+				<div class="row">
+					
+					<div class="sec-title text-center wow animated fadeInDown">
+						<h2>Entre em contato conosco!</h2>
+						<p>Deixe-nos uma mensagem!</p>
+					</div>
+					
+					
+					<div class="col-md-7 contact-form wow animated fadeInLeft">
+						<form action="mailto:contato@deufome.ml" method="post">
+							<div class="input-field">
+								<input type="text" name="name" class="form-control" placeholder="Nome">
+							</div>
+							<div class="input-field">
+								<input type="email" name="email" class="form-control" placeholder="Email">
+							</div>
+							<div class="input-field">
+								<input type="text" name="subject" class="form-control" placeholder="Assunto">
+							</div>
+							<div class="input-field">
+								<textarea name="message" class="form-control" placeholder="Digite aqui sua mensagem..."></textarea>
+							</div>
+					       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Enviar</button>
+						</form>
+					</div>
+					
+		
+				</div>
+			</div>
+		</section>
+		<!-- end Contact section -->		
+		</main>
+		
+		<footer id="footer">
+			<div class="container">
+				<div class="row text-center">
+					<div class="footer-content">
+						<div class="wow animated fadeInDown">
+							
+						
+						<p>Copyright &copy; Desenvolvido por Deu Fome | Baseado em um tema de <a href="http://www.themefisher.com">Themefisher</a> </p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Google Map API -->
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js"></script>
+        
+		
+		<!-- AQUI -->
+		<script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		// When the user clicks the button, open the modal 
+		$(".portfolio-item .img-responsive").on('click', function(event){
+			random = Math.floor(Math.random() * 899999) + 100000
+			$('.cupom-desconto').text(' '+random+' ');
+			modal.style.display = "block";
+		});
+
+		// When the user clicks on <span> (x), close the modal
+		$("#myModal .close").on('click', function(event){
+			modal.style.display = "none";
+		});
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+		</script>
+		<!-- AQUI -->
+
+    </body>
+</html>
